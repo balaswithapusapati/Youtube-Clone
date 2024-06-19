@@ -1,0 +1,48 @@
+@import '../../styles/Shared.scss';
+// header
+.comments-header {
+  h4 {
+    display: inline-block;
+    margin-right: 16px;
+  }
+}
+
+//Add new comment
+.add-comment {
+  display: flex;
+  margin-top: 16px;
+  margin-bottom: 16px;
+
+  form {
+    flex: 1;
+  }
+  .user-image {
+    width: $avatar-diameter;
+    height: $avatar-diameter;
+    margin-right: $avatar-margin;
+  }
+}
+
+//Show comments
+.comment {
+  display: flex;
+  margin: 8px 0;
+
+  .user-image {
+    width: $avatar-diameter;
+    height: $avatar-diameter;
+    margin-right: $avatar-margin;
+    flex-shrink: 0;
+  }
+
+  .user-name {
+    font-weight: 800;
+    margin-bottom: 4px;
+  }
+  .comment-actions {
+    margin-top: 4px;
+    button {
+      margin-left: 8px;
+    }
+  }
+}
